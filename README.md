@@ -76,7 +76,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 -   API keys for OpenAI (GPT-5-mini) and Google (Gemini 2.5 Flash)
 
 ### 1. Clone the Repository
-git clone https://github.com/your-username/interviq.git
+git clone https://github.com/harshit0203/interviq.git
 cd interviq
 
 
