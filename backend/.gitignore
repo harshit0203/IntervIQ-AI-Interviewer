@@ -1,0 +1,114 @@
+# -------------------------------
+# Python / FastAPI Backend
+# -------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.env.*
+!.env.example
+
+# Environment and configuration
+.env
+.env.local
+.env.*.local
+config.yaml
+config.json
+secrets.json
+
+# Logs and debug
+*.log
+logs/
+debug.log
+
+# Cache and build
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.cache/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Editor and system files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+
+# Database / temp data
+*.db
+*.sqlite3
+*.bak
+*.pid
+*.seed
+*.jsonl
+
+# Testing / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+pytest_cache/
+.pytest_cache/
+.cache/
+
+# Local uploads / generated data
+uploads/
+data/
+datasets/
+tmp/
+temp/
+media/
+
+# -------------------------------
+# LangChain / LangGraph specific
+# -------------------------------
+
+# Cache or serialized chains
+.llm_cache/
+langchain_cache/
+langgraph_cache/
+*.faiss
+*.chroma/
+*.index
+*.pkl
+*.ckpt
+*.pt
+
+# -------------------------------
+# VSCode / Pycharm / JetBrains
+# -------------------------------
+
+.vscode/
+.idea/
+*.iml
+
+# -------------------------------
+# Node (if you have LangGraph UI parts)
+# -------------------------------
+
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# -------------------------------
+# Miscellaneous
+# -------------------------------
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
