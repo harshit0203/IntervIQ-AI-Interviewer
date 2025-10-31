@@ -76,4 +76,73 @@ Follow these instructions to get a copy of the project up and running on your lo
 -   API keys for OpenAI (GPT-5-mini) and Google (Gemini 2.5 Flash)
 
 ### 1. Clone the Repository
+git clone https://github.com/your-username/interviq.git
+cd interviq
 
+
+### 2. Backend Setup
+
+Navigate to the backend directory, create a virtual environment, and install dependencies.
+
+cd backend
+python -m venv venv
+source venv/bin/activate # On Windows, use venv\Scripts\activate
+
+pip install -r requirements.txt
+
+Create a `.env` file and add your environment variables:
+
+MONGODB_URI="your-mongodb-connection-string"
+SECRET_KEY="your-jwt-secret-key"
+OPENAI_API_KEY="your-openai-api-key"
+API_KEY="your-gemini-api-key" (Your Gemini Key)
+DATABASE_NAME="your-database-name"
+ALGORITHM="your-algorithm-key"
+ACCESS_TOKEN_EXPIRE_MINUTES="your-expiry-minutes" (prefer 10080)
+
+
+Run the FastAPI server:
+
+uvicorn main:app --reload
+
+The backend will be running at `http://localhost:8000`.
+
+
+### 3. Frontend Setup
+
+In a new terminal, navigate to the frontend directory and install the required packages.
+
+cd ../frontend
+npm install
+
+
+Create a `.env.local` file to specify the backend API URL:
+
+NEXT_PUBLIC_API_URL="http://localhost:8000"
+
+Run the Next.js development server:
+
+npm run dev
+
+The frontend will be available at `http://localhost:3000`.
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+This project is distributed under the MIT License. See `LICENSE` for more information.
+
+---
+<div align="center">
+  Made with ❤️ by Harshit Sharma
+</div>
