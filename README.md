@@ -103,7 +103,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES="your-expiry-minutes" (prefer 10080)
 
 Run the FastAPI server:
 
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 
 The backend will be running at `http://localhost:8000`.
 
